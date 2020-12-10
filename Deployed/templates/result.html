@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR6ZB1HP9R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JR6ZB1HP9R');
+</script>
+
+  <title>Results</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+
+
+ <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript"
+ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+</head>
+
+<body>
+
+      <center>
+      <h1><font size="7">"{{text}}"</font></h1>
+
+       <h2 style="color:Blue;">Estimated time to get your question answered is </h2>
+
+
+       <b>
+      <font size="18">{{score}}
+      </font>
+      <font size="5">
+        Minutes
+       </font>
+      </b> 
+
+      <p align="justify">
+
+               <div class="row">
+                
+               <h2>Similar questions</h2>
+               {% for Qs in SimilarQsf %}
+               <li><font size="5">{{ Qs }}</font></li> 
+               {% endfor %}
+               
+      </div>
+
+
+      </p>
+
+ 
+
+      </center>
+          
+   </body>
+
+</html>

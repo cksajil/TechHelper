@@ -1,0 +1,14 @@
+7z x stackoverflow.com-Posts.7z 
+xml_split -s 10485760 Posts.xml
+
+nohup ./python /home/sajilck/Insight/Cluster1/DataXml2CSVBatch.py &
+nohup ./python /home/sajilck/Insight/Cluster2/DataXml2CSVBatch.py &
+nohup ./python /home/sajilck/Insight/Cluster3/DataXml2CSVBatch.py &
+
+cd /share/apps/anaconda3/bin
+
+/state/partition1/sajil
+
+nohup ./python /home/sajilck/Silhouette/Silhouette_AnalysisC1.py > /home/sajilck/Silhouette/nohup1.out &
+nohup ./python /home/sajilck/Silhouette/Silhouette_AnalysisC2.py > /home/sajilck/Silhouette/nohup2.out &
+nohup ./python /home/sajilck/Silhouette/Silhouette_AnalysisC8.py > /home/sajilck/Silhouette/nohup8.out &

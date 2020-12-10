@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR6ZB1HP9R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JR6ZB1HP9R');
+</script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JR6ZB1HP9R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JR6ZB1HP9R');
+</script>
+
+    <title>Start</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+          </head>
+          <html>
+            <body>
+              <center>
+                <h1>Welcome to Forum helper</h1>
+                <img src="{{url_for('static', filename='WCdsp1.jpg')}}" width=600 >
+                  <h2>Type your question here</h2>
+                  <form action = "/result" method = "POST">
+                    <div class="form-group w-50">
+                      <input name="text" class="form-control" placeholder="Type your question here">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </center>
+                </body>
+              </html>
