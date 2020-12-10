@@ -27,7 +27,6 @@ $ python app.py
 
 ```
 
-
 Verify the local version by navigating to your server address in your browser.
 
 
