@@ -9,7 +9,7 @@ In this project, I am focusing on data from dsp.stackexchange so that a user can
 This would help them cut short the time they need to spend on online forums and help them overcome the technical challenge faster. The project employes natural language processing and clustering techniques to groups questions of similar nature. When a user submits a question, the machine learning model identifies which cluster it belongs to, and shows the  estimated time to get the question answered and posts of similar nature.
 
 **Pipeline**: 
-![Pipeline](https://github.com/cksajil/TechHelper/tree/main/Images/BlockDGMSmall.png)
+![Pipeline](https://raw.githubusercontent.com/cksajil/TechHelper/main/Images/BlockDGMSmall.png)
 
 **Dataset**: 
 The project use the dataset **[Stack Exchange Dataset](https://archive.org/details/stackexchange)**. 
