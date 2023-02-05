@@ -1,7 +1,8 @@
 # TechHelper
 A data driven web app which help you to frame better questions online
 
-**Project Details**: 
+**Project Details**
+
 As developers work on coding or technical projects, they often get stuck at some technical roadblocks. This could be a code bug, installation issue, or a technical challenge. The place where developers look for a possible solution is often online forums like Stack Overflow or other similar sites. 
 
 In this project, I am focusing on data from dsp.stackexchange so that a user can check in advance whether their question will get answered in a reasonable time-frame. It also shows up similar questions which might be tackling the same problem.
